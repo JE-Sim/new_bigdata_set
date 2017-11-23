@@ -77,3 +77,4 @@ which(is.na(smo[,4]))
 avg <- apply(smo[,c(3,4)], 2, mean, na.rm = T)
 smo[which(is.na(smo[,3])),3] <- avg[1]
 smo[which(is.na(smo[,4])),4] <- avg[2]
+
