@@ -1,6 +1,4 @@
 setwd("c:/Users/정은/Desktop/new_bigdata_set/above 2000")
-life <- read.csv("life.rm.csv")
-
 #data should be standard form of data.frame, year should be key column #.
 KNN <- function(data, year){
   na.row <- which(is.na(data[, year])) #기준 년도에서 NA인 row추출
@@ -41,10 +39,41 @@ for(i in 1:length(na.row)){
 life[,"X2015"]
 ###################################################
 
+life <- read.csv("life.rm.csv")
 life.0 <- KNN(life, 18)
 gdp <- read.csv("gdp.rm.csv")
 gdp.0 <- KNN(gdp, 19)
 co2 <- read.csv("co2.rm.csv")
 co2.0 <- KNN(co2, 17)
+
+##################################################
 ter <- read.csv("ter.rm.csv")
 ter.0 <- KNN(ter, 18)
+i <- 1L
+na.row <- NULL
+na.row <- which(ter.0[,3] == "NaN")
+for(i in 1:length(na.row)){
+  col <- !is.na(ter[na.row[i],])
+  collected.col <- ter[, col]
+  key <- collected.col[na.row[i],]
+  a <- apply(as.data.frame(collected.col[,-c(1,2)]), 1, "-", key[,-c(1,2)])
+  b <- unlist(a) ^ 2
+  c <- as.data.frame(matrix(b, length(b)/(length(collected.col)-2), 
+                            length(collected.col)-2, byrow = T))
+  colnames(c) <- colnames(collected.col)[-c(1, 2)]
+  p.length <- apply(c, 1, mean, na.rm = T)
+  n.point <- order(p.length)[2:6]
+  d <- ter[n.point, ]
+  ter.0[na.row[i], 18] <- mean(d, na.rm = T)
+}
+order(p.length)[7]
+ter[190,]
+write.csv(d, "ter.error.csv")
+##KNN을 적용시 1~5번째로 가까운 점들 중에서 2015년이 모두 NA가 떴다.
+
+smo <- read.csv("smo.rm.2.CSV")
+which(is.na(smo[,3]))
+which(is.na(smo[,4]))
+avg <- apply(smo[,c(3,4)], 2, mean, na.rm = T)
+smo[which(is.na(smo[,3])),3] <- avg[1]
+smo[which(is.na(smo[,4])),4] <- avg[2]
