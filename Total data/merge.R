@@ -57,4 +57,7 @@ f.0 <- f[f$Country.Code %in% common1,]
 df1 <- cbind(df[df$Country.Code %in% common1,], f.0[,3:4])
 colnames(df1) <- c("Country.Name", "Country.Code","life", "gdp", "sani", "pre", "pri", "sec", 
                            "ter", "smo.tob", "smo.cig", "ob", "al", "co2", "hiv")
-write.csv(df1, "dataframe.non.race.csv")
+
+setwd("c:/Users/Á¤Àº/Desktop/new_bigdata_set/Total data")
+df1 <- read.csv("dataframe.non.race.csv")
+write.csv(df1, "dataframe.non.race.csv", row.names = F)
