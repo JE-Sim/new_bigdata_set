@@ -1,4 +1,3 @@
-Country.Name,Region.Code,Country.Code,Continent,Countinent.Region
 Afghanistan,AF,AFG,Asia,Southern Asia
 Aland Islands,AX,ALA,Europe,Northern Europe
 Albania,AL,ALB,Europe,Southern Europe
@@ -54,6 +53,7 @@ Congo (Democratic Republic of the),CD,COD,Africa,Middle Africa
 Cook Islands,CK,COK,Asia,Polynesia
 Costa Rica,CR,CRI,Americas,Central America
 Cote d'Ivoire,CI,CIV,Africa,Western Africa
+Country.Name,Region.Code,Country.Code,Continent,Countinent.Region
 Croatia,HR,HRV,Europe,Southern Europe
 Cuba,CU,CUB,Americas,Caribbean
 Curacao,CW,CUW,Americas,Caribbean
@@ -181,8 +181,8 @@ Qatar,QA,QAT,Asia,Western Asia
 Romania,RO,ROU,Europe,Eastern Europe
 Russian Federation,RU,RUS,Europe,Eastern Europe
 Rwanda,RW,RWA,Africa,Eastern Africa
-Réunion,RE,REU,Africa,Eastern Africa
-Saint Barthélemy,BL,BLM,Americas,Caribbean
+Reunion,RE,REU,Africa,Eastern Africa
+Saint Barthelemy,BL,BLM,Americas,Caribbean
 "Saint Helena, Ascension and Tristan da Cunha",SH,SHN,Africa,Western Africa
 Saint Kitts and Nevis,KN,KNA,Americas,Caribbean
 Saint Lucia,LC,LCA,Americas,Caribbean
