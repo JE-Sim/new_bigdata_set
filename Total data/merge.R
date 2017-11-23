@@ -59,5 +59,4 @@ colnames(df1) <- c("Country.Name", "Country.Code","life", "gdp", "sani", "pre", 
                            "ter", "smo.tob", "smo.cig", "ob", "al", "co2", "hiv")
 
 setwd("c:/Users/Á¤Àº/Desktop/new_bigdata_set/Total data")
-df1 <- read.csv("dataframe.non.race.csv")
 write.csv(df1, "dataframe.non.race.csv", row.names = F)
