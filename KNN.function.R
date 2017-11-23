@@ -20,7 +20,6 @@ KNN <- function(data, year){
   }
   return(data[,c(1, 2, year)])
 }
-shit <- KNN(life, 18)
 
 #################################################
 na.row <- which(is.na(life[,"X2015"]))
@@ -41,3 +40,9 @@ for(i in 1:length(na.row)){
 }
 life[,"X2015"]
 ###################################################
+
+life.0 <- KNN(life, 18)
+gdp <- read.csv("gdp.rm.csv")
+gdp.0 <- KNN(gdp, 19)
+co2 <- read.csv("co2.rm.csv")
+co2.0 <- KNN(co2, 17)
