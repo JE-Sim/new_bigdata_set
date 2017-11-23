@@ -1,6 +1,7 @@
 setwd("c:/Users/정은/Desktop/new_bigdata_set/above 2000")
 #data should be standard form of data.frame, year should be key column #.
 KNN <- function(data, year){
+  if(length(which(is.na(data[,year]))) == 0) return(data[,c(1,2, year)])
   na.row <- which(is.na(data[, year])) #기준 년도에서 NA인 row추출
   for(i in 1:length(na.row)){
     col <- !is.na(data[na.row[i],]) #key observation에서 NA가 아닌 col 추출
@@ -48,7 +49,8 @@ co2.0 <- KNN(co2, 17)
 
 ##################################################
 ter <- read.csv("ter.rm.csv")
-ter.0 <- KNN(ter, 18)
+colSums(is.na(ter[,]))
+ter.0 <- KNN(ter, 17)
 i <- 1L
 na.row <- NULL
 na.row <- which(ter.0[,3] == "NaN")
@@ -78,3 +80,30 @@ avg <- apply(smo[,c(3,4)], 2, mean, na.rm = T)
 smo[which(is.na(smo[,3])),3] <- avg[1]
 smo[which(is.na(smo[,4])),4] <- avg[2]
 
+######################################################
+sec <- read.csv("sec.rm.csv")
+sec.0 <- KNN(sec, 17)
+obesity <- read.csv("Obesity.rm.csv", header=T)
+KNN(obesity, 19)
+obs.0 <- obesity[,c(1, 2, 19)]
+hiv <- read.csv("hiv.rm.csv")
+hiv.0 <- KNN(hiv, 19)
+pre <- read.csv("pre.rm.csv")
+pre.0 <- KNN(pre, 17)
+pri <- read.csv("pri.rm.csv")
+pri.0 <- KNN(pri, 17)
+sani <- read.csv("sani.rm.csv")
+sani.0 <- KNN(sani, 18)
+
+setwd("c:/Users/정은/Desktop")
+write.csv(co2.0, "co2.rv.csv", row.names = F)
+write.csv(gdp.0, "gdp.rv.csv", row.names = F)
+write.csv(hiv.0, "hiv.rv.csv", row.names = F)
+write.csv(life.0, "life.rv.csv", row.names = F)
+write.csv(obs.0, "ob.rv.csv", row.names = F)
+write.csv(pre.0, "pre.rv.csv", row.names = F)
+write.csv(pri.0, "pri.rv.csv", row.names = F)
+write.csv(sani.0, "sani.rv.csv", row.names = F)
+write.csv(smo, "smo.rv.csv", row.names = F)
+write.csv(sec.0, "sec.rv.csv", row.names = F)
+write.csv(ter.0, "ter.rv.csv", row.names = F)
