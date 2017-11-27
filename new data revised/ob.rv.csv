@@ -1,0 +1,191 @@
+"Country.Name","Country.Code","X2016"
+"Afghanistan","AFG",23
+"Albania","ALB",57.7
+"Algeria","DZA",62
+"Andorra","AND",63.7
+"Angola","AGO",27.5
+"Antigua and Barbuda","ATG",48
+"Argentina","ARG",62.7
+"Armenia","ARM",54.4
+"Australia","AUS",64.5
+"Austria","AUT",54.3
+"Azerbaijan","AZE",53.6
+"Bahamas","BHS",64.4
+"Bahrain","BHR",65.8
+"Bangladesh","BGD",20
+"Barbados","BRB",52.4
+"Belarus","BLR",59.4
+"Belgium","BEL",59.5
+"Belize","BLZ",54.8
+"Benin","BEN",29.5
+"Bhutan","BTN",27.1
+"Bolivia (Plurinational State of)","BOL",56.1
+"Bosnia and Herzegovina","BIH",53.3
+"Botswana","BWA",43.4
+"Brazil","BRA",56.5
+"Brunei Darussalam","BRN",41.2
+"Bulgaria","BGR",61.7
+"Burkina Faso","BFA",23.2
+"Burundi","BDI",22.2
+"Cabo Verde","CPV",34.8
+"Cambodia","KHM",21.7
+"Cameroon","CMR",33.6
+"Canada","CAN",64.1
+"Central African Republic","CAF",26.2
+"Chad","TCD",23.1
+"Chile","CHL",63.1
+"China","CHN",32.3
+"Colombia","COL",59
+"Comoros","COM",27.1
+"Congo","COG",30.9
+"Congo (Democratic Republic of the)","COD",25.3
+"Cook Islands","COK",84.7
+"Costa Rica","CRI",61.6
+"Cote d'Ivoire","CIV",31.6
+"Croatia","HRV",59.6
+"Cuba","CUB",58.5
+"Cyprus","CYP",59.1
+"Denmark","DNK",55.4
+"Djibouti","DJI",38.6
+"Dominica","DMA",60.3
+"Dominican Republic","DOM",61.2
+"Ecuador","ECU",56
+"Egypt","EGY",63.5
+"El Salvador","SLV",59.9
+"Equatorial Guinea","GNQ",26.7
+"Eritrea","ERI",22
+"Estonia","EST",55.8
+"Ethiopia","ETH",20.9
+"Fiji","FJI",63.8
+"Finland","FIN",57.9
+"France","FRA",59.5
+"Gabon","GAB",40.2
+"Gambia","GMB",31.9
+"Georgia","GEO",54.2
+"Germany","DEU",56.8
+"Ghana","GHA",32
+"Greece","GRC",62.3
+"Grenada","GRD",51.4
+"Guatemala","GTM",55.9
+"Guinea","GIN",26.6
+"Guinea-Bissau","GNB",29.9
+"Guyana","GUY",49.4
+"Haiti","HTI",54.9
+"Honduras","HND",55.8
+"Hungary","HUN",61.6
+"Iceland","ISL",59.1
+"India","IND",19.7
+"Indonesia","IDN",28.2
+"Iran (Islamic Republic of)","IRN",61.6
+"Iraq","IRQ",64.6
+"Ireland","IRL",60.6
+"Israel","ISR",64.3
+"Italy","ITA",58.5
+"Jamaica","JAM",55.5
+"Japan","JPN",27.2
+"Jordan","JOR",69.6
+"Kazakhstan","KAZ",53.6
+"Kenya","KEN",25.5
+"Kiribati","KIR",78.7
+"Korea (Democratic People's Republic of)","PRK",32.4
+"Korea (Republic of)","KOR",30.3
+"Kuwait","KWT",73.4
+"Kyrgyzstan","KGZ",48.3
+"Lao People's Democratic Republic","LAO",25.4
+"Latvia","LVA",57.8
+"Lebanon","LBN",67.9
+"Lesotho","LSO",38.7
+"Liberia","LBR",30.9
+"Libya","LBY",66.8
+"Lithuania","LTU",59.6
+"Luxembourg","LUX",58.7
+"Macedonia (the former Yugoslav Republic of)","MKD",23.9
+"Madagascar","MDG",23.4
+"Malawi","MWI",42.5
+"Malaysia","MYS",30.6
+"Maldives","MDV",28.1
+"Mali","MLI",66.4
+"Malta","MLT",83.5
+"Marshall Islands","MHL",34.4
+"Mauritania","MRT",32.3
+"Mauritius","MUS",64.9
+"Mexico","MEX",75.9
+"Micronesia (Federated States of)","FSM",51.8
+"Moldova (Republic of)","MDA",55.6
+"Mongolia","MNG",59.4
+"Montenegro","MNE",60.4
+"Morocco","MAR",26.4
+"Mozambique","MOZ",24.8
+"Myanmar","MMR",40.6
+"Namibia","NAM",88.5
+"Nauru","NRU",21
+"Nepal","NPL",57.8
+"Netherlands","NLD",65.6
+"New Zealand","NZL",58.2
+"Nicaragua","NIC",22
+"Niger","NER",28.9
+"Nigeria","NGA",80
+"Niue","NIU",58.3
+"Norway","NOR",62.6
+"Oman","OMN",28.4
+"Pakistan","PAK",85.1
+"Palau","PLW",58.8
+"Panama","PAN",52.9
+"Papua New Guinea","PNG",53.5
+"Paraguay","PRY",57.5
+"Peru","PER",27.6
+"Philippines","PHL",58.3
+"Poland","POL",57.5
+"Portugal","PRT",71.7
+"Qatar","QAT",57.7
+"Romania","ROU",57.1
+"Russian Federation","RUS",25.1
+"Rwanda","RWA",52.3
+"Saint Kitts and Nevis","KNA",48.1
+"Saint Lucia","LCA",55
+"Saint Vincent and the Grenadines","VCT",77.6
+"Samoa","WSM",35.4
+"Sao Tome and Principe","STP",69.7
+"Saudi Arabia","SAU",28.4
+"Senegal","SEN",57.1
+"Serbia","SRB",36.8
+"Seychelles","SYC",27.7
+"Sierra Leone","SLE",31.8
+"Singapore","SGP",56.2
+"Slovakia","SVK",56.1
+"Slovenia","SVN",55
+"Solomon Islands","SLB",28.4
+"Somalia","SOM",53.8
+"South Africa","ZAF",61.6
+"Spain","ESP",23.3
+"Sri Lanka","LKA",28.9
+"Sudan","SDN",58.9
+"Suriname","SUR",38.4
+"Swaziland","SWZ",56.4
+"Sweden","SWE",54.3
+"Switzerland","CHE",61.4
+"Syrian Arab Republic","SYR",45.3
+"Tajikistan","TJK",32.6
+"Tanzania, United Republic of","TZA",58.1
+"Thailand","THA",21.6
+"Timor-Leste","TLS",28.1
+"Togo","TGO",78.5
+"Tonga","TON",46
+"Trinidad and Tobago","TTO",61.6
+"Tunisia","TUN",66.8
+"Turkey","TUR",51.8
+"Turkmenistan","TKM",81.9
+"Tuvalu","TUV",22.4
+"Uganda","UGA",58.4
+"Ukraine","UKR",67.8
+"United Arab Emirates","ARE",63.7
+"United Kingdom of Great Britain and Northern Ireland","GBR",27.7
+"United States of America","USA",67.9
+"Uruguay","URY",62.9
+"Uzbekistan","UZB",48.2
+"Vanuatu","VUT",57.1
+"Venezuela (Bolivarian Republic of)","VEN",63.4
+"Viet Nam","VNM",18.3
+"Yemen","YEM",48.8
+"Zambia","ZMB",27.8
+"Zimbabwe","ZWE",38.2

@@ -1,0 +1,162 @@
+"Country.Name","Country.Code","X2016"
+"Afghanistan","AFG",0.1
+"Angola","AGO",1.9
+"Albania","ALB",0.1
+"Arab World","ARB",0.130893922
+"Argentina","ARG",0.4
+"Armenia","ARM",0.2
+"Australia","AUS",0.1
+"Azerbaijan","AZE",0.1
+"Burundi","BDI",1.1
+"Benin","BEN",1
+"Burkina Faso","BFA",0.8
+"Bangladesh","BGD",0.1
+"Bulgaria","BGR",0.1
+"Bahrain","BHR",0.1
+"Bahamas, The","BHS",3.3
+"Belarus","BLR",0.4
+"Belize","BLZ",1.8
+"Bolivia","BOL",0.3
+"Brazil","BRA",0.6
+"Barbados","BRB",1.3
+"Botswana","BWA",21.9
+"Central African Republic","CAF",4
+"Chile","CHL",0.5
+"Cote d'Ivoire","CIV",2.7
+"Cameroon","CMR",3.8
+"Congo, Dem. Rep.","COD",0.7
+"Congo, Rep.","COG",3.1
+"Colombia","COL",0.4
+"Comoros","COM",0.1
+"Cabo Verde","CPV",0.8
+"Costa Rica","CRI",0.4
+"Caribbean small states","CSS",1.649911356
+"Cuba","CUB",0.4
+"Czech Republic","CZE",0.1
+"Djibouti","DJI",1.3
+"Dominican Republic","DOM",1
+"Algeria","DZA",0.1
+"Early-demographic dividend","EAR",0.810934202
+"Ecuador","ECU",0.3
+"Egypt, Arab Rep.","EGY",0.1
+"Eritrea","ERI",0.6
+"Spain","ESP",0.4
+"Ethiopia","ETH",1.1
+"Fragile and conflict affected situations","FCS",2.162651859
+"Fiji","FJI",0.1
+"France","FRA",0.4
+"Gabon","GAB",3.6
+"Georgia","GEO",0.5
+"Ghana","GHA",1.6
+"Guinea","GIN",1.5
+"Gambia, The","GMB",1.7
+"Guinea-Bissau","GNB",3.1
+"Equatorial Guinea","GNQ",6.2
+"Guatemala","GTM",0.5
+"Guyana","GUY",1.6
+"Honduras","HND",0.4
+"Heavily indebted poor countries (HIPC)","HPC",2.539046262
+"Croatia","HRV",0.1
+"Haiti","HTI",2.1
+"IDA & IBRD total","IBT",1.146410903
+"IDA total","IDA",1.986637884
+"IDA blend","IDB",2.319760253
+"Indonesia","IDN",0.4
+"IDA only","IDX",1.828972013
+"India","IND",0.3
+"Ireland","IRL",0.2
+"Iran, Islamic Rep.","IRN",0.1
+"Italy","ITA",0.3
+"Jamaica","JAM",1.7
+"Jordan","JOR",0.1
+"Kazakhstan","KAZ",0.2
+"Kenya","KEN",5.4
+"Kyrgyz Republic","KGZ",0.2
+"Cambodia","KHM",0.6
+"Kuwait","KWT",0.1
+"Latin America & Caribbean (excluding high income)","LAC",0.504287775
+"Lao PDR","LAO",0.3
+"Lebanon","LBN",0.1
+"Liberia","LBR",1.6
+"Latin America & Caribbean","LCN",0.508132071
+"Least developed countries: UN classification","LDC",1.869030706
+"Low income","LIC",2.718049115
+"Sri Lanka","LKA",0.1
+"Lower middle income","LMC",0.678207514
+"Low & middle income","LMY",1.147549905
+"Lesotho","LSO",25
+"Lithuania","LTU",0.2
+"Latvia","LVA",0.7
+"Morocco","MAR",0.1
+"Moldova","MDA",0.6
+"Madagascar","MDG",0.2
+"Middle East & North Africa","MEA",0.103273949
+"Mexico","MEX",0.3
+"Middle income","MIC",0.919783163
+"Macedonia, FYR","MKD",0.1
+"Mali","MLI",1
+"Malta","MLT",0.1
+"Myanmar","MMR",0.8
+"Middle East & North Africa (excluding high income)","MNA",0.103776472
+"Montenegro","MNE",0.1
+"Mongolia","MNG",0.1
+"Mozambique","MOZ",12.3
+"Mauritania","MRT",0.5
+"Malawi","MWI",9.2
+"Malaysia","MYS",0.4
+"North America","NAC",0.530070848
+"Namibia","NAM",13.8
+"Niger","NER",0.4
+"Nigeria","NGA",2.9
+"Nicaragua","NIC",0.2
+"Netherlands","NLD",0.2
+"Nepal","NPL",0.2
+"Other small states","OSS",8.537096428
+"Pakistan","PAK",0.1
+"Panama","PAN",0.8
+"Peru","PER",0.3
+"Philippines","PHL",0.1
+"Papua New Guinea","PNG",0.9
+"Pre-demographic dividend","PRE",3.082608714
+"Paraguay","PRY",0.5
+"Qatar","QAT",0.1
+"Romania","ROU",0.1
+"Rwanda","RWA",3.1
+"South Asia","SAS",0.252273849
+"Saudi Arabia","SAU",0.1
+"Sudan","SDN",0.2
+"Senegal","SEN",0.4
+"Sierra Leone","SLE",1.7
+"El Salvador","SLV",0.6
+"Somalia","SOM",0.4
+"Serbia","SRB",0.1
+"Sub-Saharan Africa (excluding high income)","SSA",4.263654121
+"South Sudan","SSD",2.7
+"Sub-Saharan Africa","SSF",4.263654121
+"Small states","SST",6.843481897
+"Suriname","SUR",1.4
+"Slovak Republic","SVK",0.1
+"Slovenia","SVN",0.1
+"Sweden","SWE",0.2
+"Swaziland","SWZ",27.2
+"Chad","TCD",1.3
+"Togo","TGO",2.1
+"Thailand","THA",1.1
+"Tajikistan","TJK",0.3
+"Latin America & the Caribbean (IDA & IBRD countries)","TLA",0.507863546
+"Middle East & North Africa (IDA & IBRD countries)","TMN",0.103776472
+"South Asia (IDA & IBRD)","TSA",0.252273849
+"Sub-Saharan Africa (IDA & IBRD countries)","TSS",4.263654121
+"Trinidad and Tobago","TTO",1.2
+"Tunisia","TUN",0.1
+"Tanzania","TZA",4.7
+"Uganda","UGA",6.5
+"Ukraine","UKR",0.9
+"Uruguay","URY",0.6
+"Venezuela, RB","VEN",0.6
+"Vietnam","VNM",0.4
+"World","WLD",0.8
+"Yemen, Rep.","YEM",0.1
+"South Africa","ZAF",18.9
+"Zambia","ZMB",12.4
+"Zimbabwe","ZWE",13.5
