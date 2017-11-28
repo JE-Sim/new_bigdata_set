@@ -7,19 +7,24 @@ KNN <- function(data, year){
     col <- !is.na(data[na.row[i],]) #key observation에서 NA가 아닌 col 추출
     collected.col <- data[, col] #data에서 col column들을 추출
     key <- collected.col[na.row[i],] #key observation의 row 추출
-    index <- complete.cases(collected.col)
-    non.na <- collected.col[index,]
+    index <- complete.cases(collected.col) #NA가 하나도 없는 row 추출
+    non.na <- collected.col[index,] #NA를 제거함.
     a <- apply(as.data.frame(non.na[,-c(1,2)]), 1, "-", key[,-c(1,2)]) #두 값의 차
     b <- unlist(a) ^ 2 #차의 제곱
     c <- as.data.frame(matrix(b, length(b)/(length(collected.col)-2), 
                               length(collected.col)-2, byrow = T)) #vector b를 data.frame으로 형변환
     colnames(c) <- colnames(non.na)[-c(1, 2)]
     p.length <- apply(c, 1, sum) #각 년도별로 구해진 길이들의 평균.
-    n.point <- order(p.length)[2:6] #첫번째 요소는 자기 자신이라서 제외해줬다. key와 가장 가까운 5개의 point 추출
+    j <- 2L; n.point <- NULL #첫번째 요소는 자기 자신이라서 제외해줬다. 
+    while(length(n.point) <= 5) { #key와 가장 가까운 5개의 point 추출
+      temp <- order(p.length)[j]  
+      if(!is.na(data[temp, year])) n.point <- c(n.point, temp) # if selected point's year data is not NA, then push temp to n.point
+      j <- j+1
+    }
     d <- data[n.point, year] #key와 가까운 5개의 point의 점수 추출
     data[na.row[i], year] <- mean(d, na.rm = T) # 추출된 근처 값들의 평균을 넣어줌.
   }
-  return(answer <- data[,c(1, 2, year)])
+  return(data[,c(1, 2, year)])
 }
 
 
