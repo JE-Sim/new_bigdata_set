@@ -14,20 +14,14 @@ KNN <- function(data, year){
     c <- as.data.frame(matrix(b, length(b)/(length(collected.col)-2), 
                               length(collected.col)-2, byrow = T)) #vector b를 data.frame으로 형변환
     colnames(c) <- colnames(non.na)[-c(1, 2)]
-    p.length <- apply(c, 1, sum) #각 년도별로 구해진 길이들의 평균.
-    j <- 2L; n.point <- NULL #첫번째 요소는 자기 자신이라서 제외해줬다. 
-    while(length(n.point) <= 5) { #key와 가장 가까운 5개의 point 추출
-      temp <- order(p.length)[j]  
-      if(!is.na(data[temp, year])) n.point <- c(n.point, temp) # if selected point's year data is not NA, then push temp to n.point
-      j <- j+1
-    }
+    p.length <- apply(c, 1, sum) #각 년도별로 구해진 길이들의 합
+    o.p <- order(p.length) #길이들의 합을 최소 순서로 배열
+    n.point <- o.p[which(!is.na(data[o.p, year]))][1:5] #year 칼럼에 NA가 아닌 것들 중에서 작은거 5개
     d <- data[n.point, year] #key와 가까운 5개의 point의 점수 추출
     data[na.row[i], year] <- mean(d, na.rm = T) # 추출된 근처 값들의 평균을 넣어줌.
   }
   return(data[,c(1, 2, year)])
 }
-
-
 
 life <- read.csv("life.rm.csv")
 life.0 <- KNN(life, 18)
@@ -60,7 +54,7 @@ pri.0 <- KNN(pri, 18)
 sani <- read.csv("sani.rm.csv")
 sani.0 <- KNN(sani, 18)
 
-setwd("C:/Users/정은/Desktop/new_bigdata_set/new data revised")
+setwd("C:/Users/정은/Desktop/new_bigdata_set/final data revised")
 
 write.csv(co2.0, "co2.rv.csv", row.names = F)
 write.csv(gdp.0, "gdp.rv.csv", row.names = F)
