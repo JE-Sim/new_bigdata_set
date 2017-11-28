@@ -54,4 +54,18 @@ df <- cbind(y, gdp = x.1, sani = x.2, pre = x.3, pri = x.4, sec = x.5,
             ter = x.6, smo = x.7, ob = x.8, al = x.9, co2 = x.10, hiv = x.11)
 
 setwd("c:/Users/정은/Desktop/new_bigdata_set/Final Total Data")
-write.csv(df, "Sleeping princess in penguin room.csv")
+write.csv(df, "Sleeping princess in penguin room.csv", row.names = F)
+
+setwd("c:/Users/정은/Desktop/new_bigdata_set/Final Total Data")
+df <- read.csv("Sleeping princess in penguin room.csv")
+y <- df[[3]]
+gdp <- df[[4]]; sani <- df[[5]]; pre <- df[[6]]; pri <- df[[7]]
+sec <- df[[8]]; ter <- df[[9]]; smo <- df[[11]]; ob <- df[[12]]
+al <- df[[13]]; co2 <- df[[14]]; hiv <- df[[15]]
+
+reg <- lm(y~gdp+sani+pre+pri+sec+ter+smo+ob+al+co2+hiv)
+plot(reg$residuals, type = "n", main = "residual plot", ylab = "residuals"); abline(h=0, lty="dotted")
+text(reg$residuals, names(reg$residuals), cex = 0.7)
+plot(reg$fitted.values, reg$residuals, type = "n", main = "residual plot", xlab = "y.hat", ylab = "residuals")
+abline(h = 0, lty = "dotted")
+text(reg$fitted.values, reg$residuals, names(reg$fitted.values), cex = 0.7)
