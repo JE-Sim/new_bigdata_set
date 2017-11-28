@@ -6,8 +6,10 @@
 "Argentina","ARG",0.4
 "Armenia","ARM",0.2
 "Australia","AUS",0.1
+"AUSTRIA","AUT",1.4648096056
 "Azerbaijan","AZE",0.1
 "Burundi","BDI",1.1
+"BELGIUM","BEL",0.9406547898
 "Benin","BEN",1
 "Burkina Faso","BFA",0.8
 "Bangladesh","BGD",0.1
@@ -19,9 +21,13 @@
 "Bolivia","BOL",0.3
 "Brazil","BRA",0.6
 "Barbados","BRB",1.3
+"BHUTAN","BTN",0.55296192112
 "Botswana","BWA",21.9
 "Central African Republic","CAF",4
+"CANADA","CAN",0.3221868404
+"SWITZERLAND","CHE",10.78
 "Chile","CHL",0.5
+"CHINA","CHN",0.1
 "Cote d'Ivoire","CIV",2.7
 "Cameroon","CMR",3.8
 "Congo, Dem. Rep.","COD",0.7
@@ -32,8 +38,11 @@
 "Costa Rica","CRI",0.4
 "Caribbean small states","CSS",1.649911356
 "Cuba","CUB",0.4
+"CYPRUS","CYP",0.55296192112
 "Czech Republic","CZE",0.1
+"GERMANY","DEU",0.9335920942
 "Djibouti","DJI",1.3
+"DENMARK","DNK",1.0132388132
 "Dominican Republic","DOM",1
 "Algeria","DZA",0.1
 "Early-demographic dividend","EAR",0.810934202
@@ -41,23 +50,28 @@
 "Egypt, Arab Rep.","EGY",0.1
 "Eritrea","ERI",0.6
 "Spain","ESP",0.4
+"ESTONIA","EST",1.1621868404
 "Ethiopia","ETH",1.1
 "Fragile and conflict affected situations","FCS",2.162651859
+"FINLAND","FIN",0.1
 "Fiji","FJI",0.1
 "France","FRA",0.4
 "Gabon","GAB",3.6
+"UNITED KINGDOM","GBR",1.783609823
 "Georgia","GEO",0.5
 "Ghana","GHA",1.6
 "Guinea","GIN",1.5
 "Gambia, The","GMB",1.7
 "Guinea-Bissau","GNB",3.1
 "Equatorial Guinea","GNQ",6.2
+"GREECE","GRC",2.04
 "Guatemala","GTM",0.5
 "Guyana","GUY",1.6
 "Honduras","HND",0.4
 "Heavily indebted poor countries (HIPC)","HPC",2.539046262
 "Croatia","HRV",0.1
 "Haiti","HTI",2.1
+"HUNGARY","HUN",0.1
 "IDA & IBRD total","IBT",1.146410903
 "IDA total","IDA",1.986637884
 "IDA blend","IDB",2.319760253
@@ -66,13 +80,17 @@
 "India","IND",0.3
 "Ireland","IRL",0.2
 "Iran, Islamic Rep.","IRN",0.1
+"ICELAND","ISL",1.10878574776
+"ISRAEL","ISR",1.642411939352
 "Italy","ITA",0.3
 "Jamaica","JAM",1.7
 "Jordan","JOR",0.1
+"JAPAN","JPN",0.1
 "Kazakhstan","KAZ",0.2
 "Kenya","KEN",5.4
 "Kyrgyz Republic","KGZ",0.2
 "Cambodia","KHM",0.6
+"KOREA, REPUBLIC OF","KOR",0.1
 "Kuwait","KWT",0.1
 "Latin America & Caribbean (excluding high income)","LAC",0.504287775
 "Lao PDR","LAO",0.3
@@ -86,10 +104,12 @@
 "Low & middle income","LMY",1.147549905
 "Lesotho","LSO",25
 "Lithuania","LTU",0.2
+"LUXEMBURG","LUX",0.6151065963504
 "Latvia","LVA",0.7
 "Morocco","MAR",0.1
 "Moldova","MDA",0.6
 "Madagascar","MDG",0.2
+"MALDIVES","MDV",0.55296192112
 "Middle East & North Africa","MEA",0.103273949
 "Mexico","MEX",0.3
 "Middle income","MIC",0.919783163
@@ -102,22 +122,28 @@
 "Mongolia","MNG",0.1
 "Mozambique","MOZ",12.3
 "Mauritania","MRT",0.5
+"MAURITIUS","MUS",5.58
 "Malawi","MWI",9.2
 "Malaysia","MYS",0.4
-"North America","NAC",0.5240566784
+"North America","NAC",0.18
 "Namibia","NAM",13.8
 "Niger","NER",0.4
 "Nigeria","NGA",2.9
 "Nicaragua","NIC",0.2
 "Netherlands","NLD",0.2
+"NORWAY","NOR",0.474460931
 "Nepal","NPL",0.2
+"NEW ZEALAND","NZL",0.1
+"OMAN","OMN",1.013893603
 "Other small states","OSS",8.537096428
 "Pakistan","PAK",0.1
 "Panama","PAN",0.8
 "Peru","PER",0.3
 "Philippines","PHL",0.1
 "Papua New Guinea","PNG",0.9
+"POLAND","POL",0.55296192112
 "Pre-demographic dividend","PRE",3.082608714
+"PORTUGAL","PRT",2.7027787206
 "Paraguay","PRY",0.5
 "Qatar","QAT",0.1
 "Romania","ROU",0.1
@@ -126,6 +152,7 @@
 "Saudi Arabia","SAU",0.1
 "Sudan","SDN",0.2
 "Senegal","SEN",0.4
+"SINGAPORE","SGP",0.1
 "Sierra Leone","SLE",1.7
 "El Salvador","SLV",0.6
 "Somalia","SOM",0.4
@@ -134,11 +161,13 @@
 "South Sudan","SSD",2.7
 "Sub-Saharan Africa","SSF",4.263654121
 "Small states","SST",6.843481897
+"SAO TOME AND PRINCIPE","STP",0.60671841884
 "Suriname","SUR",1.4
 "Slovak Republic","SVK",0.1
 "Slovenia","SVN",0.1
 "Sweden","SWE",0.2
 "Swaziland","SWZ",27.2
+"SYRIAN ARAB REPUBLIC","SYR",0.55296192112
 "Chad","TCD",1.3
 "Togo","TGO",2.1
 "Thailand","THA",1.1
@@ -149,10 +178,13 @@
 "Sub-Saharan Africa (IDA & IBRD countries)","TSS",4.263654121
 "Trinidad and Tobago","TTO",1.2
 "Tunisia","TUN",0.1
+"TURKEY","TUR",0.1
 "Tanzania","TZA",4.7
 "Uganda","UGA",6.5
 "Ukraine","UKR",0.9
 "Uruguay","URY",0.6
+"UNITED STATES","USA",2.62302131927008
+"UZBEKISTAN","UZB",0.770592384224
 "Venezuela, RB","VEN",0.6
 "Vietnam","VNM",0.4
 "World","WLD",0.8
