@@ -1,4 +1,4 @@
-setwd("c:/Users/정은/Desktop/new_bigdata_set/above 2000")
+setwd("C:/Users/양수형/Documents/GitHub/new_bigdata_set/above 2000")
 KNN <- function(data, year){
   if(length(which(is.na(data[,year]))) == 0) return(data[,c(1,2, year)])
   na.row <- which(is.na(data[, year])) #기준 년도에서 NA인 row추출
@@ -45,8 +45,8 @@ sec.0 <- KNN(sec, 18)
 obesity <- read.csv("Obesity.rm.csv", header=T)
 KNN(obesity, 19)
 obs.0 <- obesity[,c(1, 2, 19)]
-hiv <- read.csv("hiv.rm.csv")
-hiv.0 <- KNN(hiv, 19)
+hiv <- read.csv("hiv2.raw.data.csv")
+hiv.0 <- KNN(hiv, 17)
 pre <- read.csv("pre.rm.csv")
 pre.0 <- KNN(pre, 18)
 pri <- read.csv("pri.rm.csv")
@@ -54,7 +54,6 @@ pri.0 <- KNN(pri, 18)
 sani <- read.csv("sani.rm.csv")
 sani.0 <- KNN(sani, 18)
 
-setwd("C:/Users/정은/Desktop/new_bigdata_set/final data revised")
 
 write.csv(co2.0, "co2.rv.csv", row.names = F)
 write.csv(gdp.0, "gdp.rv.csv", row.names = F)
@@ -67,3 +66,4 @@ write.csv(sani.0, "sani.rv.csv", row.names = F)
 write.csv(smo, "smo.rv.csv", row.names = F)
 write.csv(sec.0, "sec.rv.csv", row.names = F)
 write.csv(ter.0, "ter.rv.csv", row.names = F)
+
