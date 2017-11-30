@@ -26,7 +26,7 @@ anova(reg.cp, reg.1)
 cp.logX <- as.data.frame(cbind(log.gdp = log.gdp, sani = sani.1, pre = pre.1, pri = pri.1,
                                ter = ter.1, smo = smo.1, log.co2 = log.co2, log.hiv = log.hiv))
 reg.cplog <- lm(life.1~log.gdp+sani.1+pre.1+pri.1+ter.1+smo.1+log.co2+log.hiv)
-anova(reg.cplog, reg.0)
+anova(reg.cplog, reg.log)
 
 
 #########cp.X scatterplot ###########
@@ -35,7 +35,7 @@ for (j in c(1:8)){
   obj <- lm(life.1 ~ cp.X[,j])
   list.obj[j] <- obj
 }
-par(mfrow = c(3, 3))
+par(mfrow = c(2, 4))
 for (j in c(1:8)){
   plot(cp.X[,j], life.1, color=c("white","gray"), xlab=colnames(cp.X)[j], main=paste("x", j))
   abline(lm(life.1~cp.X[,j]), col="red")
@@ -54,7 +54,7 @@ for (j in c(1:8)){
   objlog <- lm(life.1 ~ cp.logX[,j])
   list.objlog[j] <- objlog
 }
-par(mfrow = c(3, 3))
+par(mfrow = c(2, 4))
 for (j in c(1:8)){
   plot(cp.logX[,j], life.1, color=c("white","gray"), xlab=colnames(cp.logX)[j], main=paste("x", j))
   abline(lm(life.1~cp.logX[,j]), col="red")

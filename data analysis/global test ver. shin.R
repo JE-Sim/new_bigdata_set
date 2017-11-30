@@ -29,13 +29,13 @@ anova(reg.1); anova(bic.1)
 SSE.f <- anova(reg.1)[12,2]; DF.Ef <- 135
 SSE.r <- anova(bic.1)[5,2]; DF.Er <- 139
 F.stat <- ((SSE.r-SSE.f)/(DF.Er - DF.Ef))/(SSE.f/DF.Ef)  ##p.value (0.002)
-anova(bic.1, reg.1)
+anova(bic.1, reg.1) #H0 : reduced / 기각이 되어서 reduced one을 쓸수가 없다.
 ###log transformation######################################################
 bic.log <- lm(life.1~log.gdp+sani.1+pre.1+log.hiv)
 reg.log <- lm(life.1~log.gdp+sani.1+pre.1+pri.1+sec.1+ter.1+smo.1+ob.1+al.1+log.co2+log.hiv)
 anova(bic.log, reg.log)
 SSE.f <- anova(reg.log)[12,2]; DF.Ef <- 135
-SSE.r <- anova(bic.2)[5,2]; DF.Er <- 139
+SSE.r <- anova(bic.log)[5,2]; DF.Er <- 139
 F.stat <- ((SSE.r-SSE.f)/(DF.Er - DF.Ef))/(SSE.f/DF.Ef)  ##p.value (0.003)
 ##########################################################################
 #### cp ...... c pal
@@ -46,5 +46,4 @@ anova(reg.cp, reg.1)
 reg.log
 reg.logcp<- lm(life.1~log.gdp+sani.1+pre.1+pri.1+ter.1+smo.1+log.co2+log.hiv)
 anova(reg.logcp, reg.log)
-
 

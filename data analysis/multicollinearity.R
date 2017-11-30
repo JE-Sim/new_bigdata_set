@@ -13,7 +13,7 @@ library(corrplot); library(DAAG)
 reg.r <- lm(life.1~gdp.1+sani.1+pre.1+pri.1+ter.1+smo.1+ob.1+hiv.1)
 DF.r <- as.data.frame(cbind(life = life.1, gdp = gdp.1, sani = sani.1, pre = pre.1,
               pri = pri.1, ter = ter.1, smo = smo.1, ob = ob.1, hiv = hiv.1))
-plot(DF.r)
+plot(DF.r[,-1])
 cor1.matrix <- matrix(0,8,8)
 colnames(cor1.matrix) <- rownames(cor1.matrix) <- colnames(DF.r)[-1]
 for(i in 1:8){
@@ -30,7 +30,7 @@ log.gdp <- log(gdp.1, 10); log.co2 <- log(co2.1, 2); log.hiv <- log(hiv.1, 2)
 reg.logr <- lm(life.1~log.gdp+sani.1+pre.1+pri.1+ter.1+smo.1+log.co2+log.hiv)
 DF.logr<- as.data.frame(cbind(life = life.1, log.gdp = log.gdp, sani = sani.1, pre = pre.1,
                               pri = pri.1, ter = ter.1, smo = smo.1, log.co2 = log.co2, log.hiv = log.hiv))
-plot(DF.logr)
+plot(DF.logr[,-1])
 
 corrplot(DF.r, method="number")
 cor.matrix <- matrix(0,8,8)
@@ -44,8 +44,9 @@ for(i in 1:8){
 }
 round(cor.matrix, 4)
 cor.matrix[which(cor.matrix > 0.5)]
-vif(reg.logr)  ##10 or 4를 넘으면 공선성 있다고 생각한다.
-#why log transformation's the vip is lower than the vip?
+##10 or 4를 넘으면 공선성 있다고 생각한다.
+vif(reg.logr) 
+#why log transformation's the vif is lower than the vif?
 ###########################################################
 anova(reg.r, reg.logr)
 AIC(reg.r, reg.logr)

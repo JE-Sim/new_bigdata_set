@@ -8,7 +8,7 @@ Final Total data : 우리가 사용할 데이터 셋이 Sleeping princess in penguin room.c
 1. assumption ver. shin.R : independence / normality / heteroscedasticity
 2. data analysis ver. huh.R : 여기서 log transformation의 시초가 들어감. 12개의 변수의 life에 대한 산점도가 나옵니다.
 3. model reduce ver. shin.R : 변수 선택. 8개로 줄임. cp 기준으로 선택함. log transformation이 된 reduced model, 그냥 reduced model 두개가 설정되었다.
-4. data analysis ver. huh2.R : log transformation 하고 나서, cp로 뽑힌 8개의 변수의 life에 대한 산점도가 나옵니다.
-5. global test ver. shin.R : cp reduced model에서 global test, cp log transformation reduced model에서 global test를 돌려보았다.
+4. global test ver. shin.R : cp reduced model에서 global test, cp log transformation reduced model에서 global test를 돌려보았다.
+5. data analysis ver. huh2.R : log transformation 하고 나서, cp로 뽑힌 8개의 변수의 life에 대한 산점도가 나옵니다.
 6. multicollinearity.R : 다중 공선성. correlation.matrix, plot(df.r), 그냥 model과 log transformation model 중에서 무엇이 더 좋은 모델인가. vip
 기타 : 하면서 겨슷님에게 질문할것들을 담았으나. 5NN을 제대로 고쳐서 결국에는 필요없게 됨.
