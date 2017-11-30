@@ -53,7 +53,9 @@ text(e, cex = 0.7)
 text(out.id, e[out.id], out.id, col=2, cex = 0.7)
 abline(h = 0, col = 2, lty = 2)
 points(out.id, e[out.id], col = 4, cex = 2)
-  #outlier가 ourlier가 아닐 지경으로 너무 많다.
+  #outlier가 outlier가 아닐 지경으로 너무 많다.
+plot(t)
+abline(h = c(qt(1-alpha/2, n - p - 2), -qt(1-alpha/2, n - p - 2)), col = 2)
 
 #1.5 IQR
 summary(y.hat)
@@ -98,7 +100,7 @@ abline(h = 2 * sqrt((p + 1)/(n - p - 1)), col = 2, lty = 2)
 
 
 ##############influential point delete fitted model ################
-infl.id # 44, 106, 145
+infl.id <- c(44, 106, 145) # 44, 106, 145
 DF.1 <- DF[-as.numeric(infl.id),]
 life.1 <- DF.1[[3]]
 gdp.1 <- DF.1[[4]]; sani.1 <- DF.1[[5]]; pre.1 <- DF.1[[6]]; pri.1 <- DF.1[[7]]
@@ -115,5 +117,8 @@ round(obj$coefficients, 4)
 log.gdp <- log(gdp.1, 10); log.co2 <- log(co2.1, 2); log.hiv <- log(hiv.1, 2)
 reg.log <- lm(life.1~log.gdp+sani.1+pre.1+pri.1+sec.1+ter.1+smo.1+ob.1+al.1+log.co2+log.hiv)
 obj.log <- summary(reg.log)
-
 round(obj.log$coefficients, 4)
+par(mfrow=c(1,2))
+plot(reg.log)
+plot(reg)
+plot(reg.1)
