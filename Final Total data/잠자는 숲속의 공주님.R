@@ -58,12 +58,13 @@ df <- cbind( y, gdp = x.1, sani = x.2, pre = x.3, pri = x.4, sec = x.5,
             ter = x.6, smo = x.7, ob = x.8, al = x.9, co2 = x.10, hiv = x.11)
 
 write.csv(df, "final.csv", row.names = F)
-
+setwd("C:/Users/Á¤Àº/Desktop/new_bigdata_set/Final Total data")
 df <- read.csv("Sleeping princess in penguin room.csv")
+df <- df[,-10]; colnames(df)[c(3,10)] <- c("life", "smo")
 life <- df[[3]]
 gdp <- df[[4]]; sani <- df[[5]]; pre <- df[[6]]; pri <- df[[7]]
-sec <- df[[8]]; ter <- df[[9]]; smo <- df[[11]]; ob <- df[[12]]
-al <- df[[13]]; co2 <- df[[14]]; hiv <- df[[15]]
+sec <- df[[8]]; ter <- df[[9]]; smo <- df[[10]]; ob <- df[[11]]
+al <- df[[12]]; co2 <- df[[13]]; hiv <- df[[14]]
 
 reg <- lm(life~gdp+sani+pre+pri+sec+ter+smo+ob+al+co2+hiv)
 summary(reg)
@@ -75,7 +76,7 @@ plot(reg$fitted.values, reg$residuals, type = "n", main = "residual plot", xlab 
 abline(h = 0, lty = "dotted")
 text(reg$fitted.values, reg$residuals, names(reg$fitted.values), cex = 0.7)
 
-df1 <- df[,-c(1, 2, 10)]
+df1 <- df[,-c(1, 2)]
 
 par(mfrow = c(3, 4))
 list.obj <- list()
@@ -99,9 +100,11 @@ Mode <- function(x) {
 
 df2 <- cbind(log(gdp, 10), sani, pre, smo, al, log(co2, 2), log(hiv, 2))
 colnames(df2) <- c("log.gdp", "sani", "pre", "smo", "al", "log.co2", "log.hiv")
-par(mfrow = c(3, 3))
+par(mfrow = c(2, 4))
 for (j in c(1:7)){
+  obj2 <- lm(life~df2[,j])
   plot(df2[,j], life, color=c("white","gray"), xlab=colnames(df2)[j], main=paste("x", j))
+  abline(obj2, col = "red")
 }
 
 answer <- NULL

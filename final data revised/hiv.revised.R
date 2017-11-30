@@ -1,17 +1,3 @@
-setwd("C:/Users/정은/Desktop/new_bigdata_set/above 2000")
-hiv1 <- read.csv("hiv.rm.csv")
-setwd("C:/Users/정은/Desktop/new_bigdata_set/final_hiv_revised")
-hiv2 <- read.csv("hiv2.raw.data.csv")
-###########################################
-hiv.com <- intersect(as.character(hiv1[[2]]), as.character(hiv2[[2]]))
-hiv2[!(hiv2[[2]] %in% hiv.com), ]
-hiv.1 <- cbind(hiv2[!(hiv2[[2]] %in% hiv.com), ], x2015 = NA, x2016 = NA)
-colnames(hiv.1) <- colnames(hiv1)
-hiv <- rbind(hiv1, hiv.1)
-h.code <- as.character(hiv$Country.Code)
-order.code <- order(h.code)
-hiv <- hiv[order.code,]
-
 KNN <- function(data, year){
   if(length(which(is.na(data[,year]))) == 0) return(data[,c(1,2, year)])
   na.row <- which(is.na(data[, year])) #기준 년도에서 NA인 row추출
@@ -36,6 +22,21 @@ KNN <- function(data, year){
   return(data[,c(1, 2, year)])
 }
 
+
+
+setwd("C:/Users/정은/Desktop/new_bigdata_set/above 2000")
+hiv1 <- read.csv("hiv.rm.csv") # 2000~2016 hiv data
+setwd("C:/Users/정은/Desktop/new_bigdata_set/final_hiv_revised")
+hiv2 <- read.csv("hiv2.raw.data.csv") # 2000~2014 hiv data
+###########################################
+hiv.com <- intersect(as.character(hiv1[[2]]), as.character(hiv2[[2]]))
+hiv2[!(hiv2[[2]] %in% hiv.com), ]
+hiv.1 <- cbind(hiv2[!(hiv2[[2]] %in% hiv.com), ], x2015 = NA, x2016 = NA)
+colnames(hiv.1) <- colnames(hiv1)
+hiv <- rbind(hiv1, hiv.1)
+h.code <- as.character(hiv$Country.Code)
+order.code <- order(h.code)
+hiv <- hiv[order.code,]
 hiv.0 <- KNN(hiv, 19)
 setwd("C:/Users/정은/Desktop/new_bigdata_set/final data revised")
 write.csv(hiv.0, "hiv.rv.csv", row.names = F)
