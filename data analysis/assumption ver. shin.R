@@ -68,10 +68,10 @@ plot(r, type = "n", xlab = "index", ylab = "residual", main = "1.5 IQR outlier")
 text(r, cex = 0.7)
 text(out.IQR, r[out.IQR], out.IQR, col=2, cex = 0.7)
 abline(h = 0, col = 2, lty = 2)
-points(out.IQR, r[out.IQR], col = 4, cex = 2)
+points(out.IQR, r[out.IQR], col = 4, cex = 3)
    ## 22, 58, 106
 #box plot
-boxplot(r, main = "residual box plot")
+boxplot(r, main = "residual box plot", horizontal = T)
 
 #####influential point#####
 #Cook's distance
@@ -82,14 +82,14 @@ H <- X %*% solve(t(X) %*% X) %*% t(X)
 h <- diag(H)
 C <- ((r^2)/(p+1)) * (h/(1-h))
 infl.id <- names(C)[C > 1]
-plot(C, type = "n")
+plot(C, type = "n", main = "Cook's distance, influential point")
 text(C, cex = 0.7)
 abline(h = 1, col = 2, lty = 2)
 points(infl.id, C[infl.id], col = 4, cex = 2.2)
    ## 44, 106, 145
 #DFFITS
 DFFITS <- t * sqrt(h / (1 - h))
-plot(DFFITS, ylim = c(-0.5, 3.5), type = "n")
+plot(DFFITS, ylim = c(-0.5, 3.5), type = "n", main = "DFFITS, influential points")
 text(abs(DFFITS), cex = 0.7)
 abline(h = 2 * sqrt((p + 1)/(n - p - 1)), col = 2, lty = 2)
    #ÆÄÅº~ ¿ì¸®´Â ÄîÀÌ ÁÁ¾Æ¿ä~ / studentized t°¡ ÆÄÅº³ª¼­ DFFITSµµ ÆÄÅº Àë
