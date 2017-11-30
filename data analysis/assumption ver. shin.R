@@ -85,7 +85,7 @@ infl.id <- names(C)[C > 1]
 plot(C, type = "n", main = "Cook's distance, influential point")
 text(C, cex = 0.7)
 abline(h = 1, col = 2, lty = 2)
-points(infl.id, C[infl.id], col = 4, cex = 2.2)
+points(infl.id, C[infl.id], col = 4, cex = 3)
    ## 44, 106, 145
 #DFFITS
 DFFITS <- t * sqrt(h / (1 - h))
