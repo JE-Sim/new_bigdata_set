@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 setwd("C:/Users/양수형/Documents/GitHub/new_bigdata_set/final_hiv_revised")
-=======
 ###########################################
 setwd("C:/Users/정은/Desktop/new_bigdata_set/final data revised")
->>>>>>> 160129a16b55bb508c94308d246844be70a9b824
 co2 <- read.csv("co2.rv.csv")
 gdp <- read.csv("gdp.rv.csv")
 hiv <- read.csv("hiv.rv.csv") #193obs.짜리로 개정함 유후~
@@ -60,7 +57,6 @@ x.6 <- ter[ter[[2]] %in% common, 3]
 df <- cbind( y, gdp = x.1, sani = x.2, pre = x.3, pri = x.4, sec = x.5,
             ter = x.6, smo = x.7, ob = x.8, al = x.9, co2 = x.10, hiv = x.11)
 
-<<<<<<< HEAD
 write.csv(df, "final.csv", row.names = F)
 
 df <- read.csv("Sleeping princess in penguin room.csv")
@@ -116,7 +112,5 @@ answer
 plot(smo ~ ob)
 plot(log(gdp, 10) ~ ob)
 plot(al ~ ob)
-=======
 setwd("c:/Users/정은/Desktop/new_bigdata_set/Final Total Data")
 write.csv(df, "Sleeping princess in penguin room.csv", row.names = F)
->>>>>>> 160129a16b55bb508c94308d246844be70a9b824
