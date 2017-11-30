@@ -34,7 +34,7 @@ for (j in c(2:13)){
 
 par(mfrow = c(3, 4))
 for (j in c(2:13)){
-  plot(DF1[,j], life, color=c("white","gray"), xlab=colnames(DF1)[j], main=paste("x", j))
+  plot(DF1[,j], life, xlab=colnames(DF1)[j], main=paste("x", j))
   abline(lm(life~DF1[,j]), col="red")
 }
 
@@ -45,13 +45,16 @@ Mode <- function(x) {
 }
 
 # gdp 로그변환, sani, pre, smo, ob(two group), al, co2 로그 변환, hiv 로그 변환
-gdp+sani+pre+pri+sec+ter+smo+ob+al+co2+hiv
-DFlog <- as.data.frame(cbind(log(gdp, 10), sani, pre, pri, sec, ter, smo, ob, al, log(co2, 2), log(hiv, 2)))
-colnames(DFlog) <- c("log.gdp", "sani", "pre", "smo", "al", "log.co2", "log.hiv")
-par(mfrow = c(2, 4))
+log.gdp <- log(gdp, 10); log.co2 <- log(co2, 2); log.hiv <- log(hiv, 2)
+DFlog <- as.data.frame(cbind(log.gdp = log.gdp, sani = sani, pre = pre, pri = pri, 
+                             sec = sec, ter = ter, smo = smo, ob = ob, al = al, 
+                             log.co2 = log.co2, log.hiv = log.hiv))
+par(mfrow = c(3, 4))
 for (j in c(1:11)){
-  plot(DFlog[,j], life, color=c("white","gray"), xlab=colnames(DFlog)[j], main=paste("x", j))
+  plot(DFlog[,j], life, xlab=colnames(DFlog)[j], main=paste("x", j))
+  abline(lm(life~DFlog[,j]), col="red")
 }
+j <- 1L
 
 answer <- NULL
 for (j in c(1:7)){
