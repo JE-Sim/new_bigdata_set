@@ -45,11 +45,11 @@ Mode <- function(x) {
 }
 
 # gdp 로그변환, sani, pre, smo, ob(two group), al, co2 로그 변환, hiv 로그 변환
-
-DFlog <- cbind(log(gdp, 10), sani, pre, smo, al, log(co2, 2), log(hiv, 2))
+gdp+sani+pre+pri+sec+ter+smo+ob+al+co2+hiv
+DFlog <- as.data.frame(cbind(log(gdp, 10), sani, pre, pri, sec, ter, smo, ob, al, log(co2, 2), log(hiv, 2)))
 colnames(DFlog) <- c("log.gdp", "sani", "pre", "smo", "al", "log.co2", "log.hiv")
 par(mfrow = c(2, 4))
-for (j in c(1:7)){
+for (j in c(1:11)){
   plot(DFlog[,j], life, color=c("white","gray"), xlab=colnames(DFlog)[j], main=paste("x", j))
 }
 

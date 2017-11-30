@@ -49,11 +49,11 @@ t.r <- rstudent(reg)
 out.id <- which(abs(t.r) > qt(1-alpha/2, n - p - 2)); out.id
 #plot
 y.hat <- reg$fitted.values
-plot(e, type = "n", xlab = "index", ylab = "residual", main="studentized residual")
-text(e, cex = 0.7)
-text(out.id, e[out.id], out.id, col=2, cex = 0.7)
+plot(t.r, type = "n", xlab = "index", ylab = "studentized residual", main="studentized residual")
+text(t.r, cex = 0.7)
+text(out.id, t.r[out.id], out.id, col=2, cex = 0.7)
 abline(h = 0, col = 2, lty = 2)
-points(out.id, e[out.id], col = 4, cex = 3)
+points(out.id, t.r[out.id], col = 4, cex = 3)
   #outlier가 outlier가 아닐 지경으로 너무 많다.
 plot(t)
 abline(h = c(qt(1-alpha/2, n - p - 2), -qt(1-alpha/2, n - p - 2)), col = 2)
