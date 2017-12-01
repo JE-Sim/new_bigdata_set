@@ -16,6 +16,8 @@ al.1 <- DF.1[[13]]; co2.1 <- DF.1[[14]]; hiv.1 <- DF.1[[15]]
 
 n.1 <- nrow(DF.1); p <- ncol(DF.1) - 4
 reg.1 <- lm(life.1~gdp.1+sani.1+pre.1+pri.1+sec.1+ter.1+smo.1+ob.1+al.1+co2.1+hiv.1)
+obg.reg <- summary(reg.1)
+obg.reg
 #######################################################################
 ###########################로그변환########################
 log.gdp <- log(gdp.1, 10); log.co2 <- log(co2.1, 2); log.hiv <- log(hiv.1, 2)
