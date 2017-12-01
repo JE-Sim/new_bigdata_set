@@ -44,8 +44,11 @@ F.stat <- ((SSE.r-SSE.f)/(DF.Er - DF.Ef))/(SSE.f/DF.Ef)  ##p.value (0.003)
 reg.1
 reg.cp <- lm(life.1~gdp.1+sani.1+pre.1+pri.1+ter.1+smo.1+ob.1+hiv.1)
 anova(reg.cp, reg.1)
+anova(reg.1, reg.cp)
+summary(reg.cp)
 #### cp ...... log c pal
 reg.log
 reg.logcp<- lm(life.1~log.gdp+sani.1+pre.1+pri.1+ter.1+smo.1+log.co2+log.hiv)
 anova(reg.logcp, reg.log)
+summary(reg.logcp)
 

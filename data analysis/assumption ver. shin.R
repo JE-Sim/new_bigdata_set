@@ -49,6 +49,7 @@ t.r <- rstudent(reg)
 out.id <- which(abs(t.r) > qt(1-alpha/2, n - p - 2)); out.id
 #plot
 y.hat <- reg$fitted.values
+par(mfrow=c(1,1))
 plot(t.r, type = "n", xlab = "index", ylab = "studentized residual", main="studentized residual")
 text(t.r, cex = 0.7)
 text(out.id, t.r[out.id], out.id, col=2, cex = 0.7)
